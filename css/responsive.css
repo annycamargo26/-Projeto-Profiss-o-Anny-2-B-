@@ -1,0 +1,168 @@
+/* Dispositivos médios (tablets, 768px e acima) */
+@media (max-width: 992px) {
+    .sobre-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .sobre-img {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .timeline-item::after {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::after,
+    .timeline-item:nth-child(even) .timeline-content::after {
+        left: 20px;
+        border-right: 10px solid var(--light-color);
+        border-left: 0;
+    }
+    
+    .timeline-item:nth-child(odd)::after {
+        right: auto;
+        left: 20px;
+    }
+}
+
+/* Dispositivos pequenos (telefones, 768px e abaixo) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .nav-menu ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        padding: 20px 0;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .nav-menu ul.active {
+        display: flex;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 15px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .contato-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .sobre-texto h2 {
+        font-size: 1.8rem;
+    }
+    
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .newsletter form {
+        flex-direction: column;
+    }
+    
+    .newsletter input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .newsletter button {
+        border-radius: 4px;
+    }
+}
+
+/* Dispositivos muito pequenos (telefones, 480px e abaixo) */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 500px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .valores-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .processo-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .pagination a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
